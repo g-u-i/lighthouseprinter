@@ -3,3 +3,4 @@ node_modules
 *.pdf
 .AppleDouble/
 renders
+cache/
