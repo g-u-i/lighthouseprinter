@@ -6,6 +6,7 @@ server="http://localhost:8000"
 mkdir -p $cache
 
 phantomjs pdf.js $server/book/ $cache/all
+phantomjs pdf.js $server/book/dreamid:null $cache/null
 
 for ((i=start; i<=end; i++))
 do
