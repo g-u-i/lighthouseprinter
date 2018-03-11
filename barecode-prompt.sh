@@ -1,5 +1,6 @@
 
-cache="cache/pdf/"
+DIR="$(cd "$(dirname "$0")" && pwd)"
+cache=$DIR"/cache/pdf/"
 
 while [[ true ]]; do
   echo "please scan a barcode!"
