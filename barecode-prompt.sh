@@ -1,5 +1,5 @@
 
-cache="pdf-cache/"
+cache="cache/pdf/"
 
 while [[ true ]]; do
   echo "please scan a barcode!"
