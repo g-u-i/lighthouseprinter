@@ -31,12 +31,12 @@ nano ~/.config/lxsession/LXDE-pi/autostart
 # Add this line to the end of the file:
 # @lxterminal
 
-https://stackoverflow.com/questions/36466500/on-raspberry-pi-auto-start-terminal-after-login
-
-var height = page.evaluate(function() { return document.body.offsetHeight });
-
-// var paperheight = (height*0.058)+'cm';
-// console.log(height, paperheight);
-//
-// page.paperSize = { width: '8cm', height:paperheight, margin: '0.5cm' }
-// page.render('github-2.pdf');
+# https://stackoverflow.com/questions/36466500/on-raspberry-pi-auto-start-terminal-after-login
+#
+# var height = page.evaluate(function() { return document.body.offsetHeight });
+#
+# // var paperheight = (height*0.058)+'cm';
+# // console.log(height, paperheight);
+# //
+# // page.paperSize = { width: '8cm', height:paperheight, margin: '0.5cm' }
+# // page.render('github-2.pdf');
