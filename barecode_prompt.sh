@@ -1,6 +1,7 @@
 
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cache=$DIR"/cache/pdf/"
+printer="CUSTOM_Engineering_VKP80III"
 
 while [[ true ]]; do
   echo "please scan a barcode!"
@@ -13,6 +14,6 @@ while [[ true ]]; do
   fi
 
   echo "printing "$code
-  lpr -P CUSTOM-Engineering-VKP80III -o media=ZX80MMYRoll $cache$code.pdf
+  lpr -P $printer -o media=ZX80MMYRoll $cache$code.pdf
 
 done
