@@ -7,6 +7,6 @@ while [[ true ]]; do
   read code
   echo "printing "$code
 
-  lpr -P CUSTOM_Engineering_VKP80III -o media=X80MMYRoll $cache$code.pdf
+  lpr -P CUSTOM-Engineering-VKP80III -o media=ZX80MMYRoll $cache$code.pdf
 
 done
