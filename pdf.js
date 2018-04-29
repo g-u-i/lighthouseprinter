@@ -1,10 +1,22 @@
 var page = require('webpage').create();
 var system = require('system');
 
-console.log("rendering",system.args[1]);
+console.log("rendering …",system.args[1]);
 
 page.open(system.args[1], function() {
-  page.paperSize = { width: '8cm', height:'2000cm', margin: '0.5cm' }
+
+  var height= page.evaluate(function(){
+    return document.body.offsetHeight
+  });
+
+  var max = 120;
+  var size = Math.round(height/18);
+  var sizeCm = Math.min(size,max)+"cm";
+
+  console.log(max, size, sizeCm);
+
+  page.paperSize = { width: '8cm', height:sizeCm, margin: '0.4cm' }
   page.render(system.args[2]+'.pdf');
   phantom.exit();
+
 });
