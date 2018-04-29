@@ -9,10 +9,10 @@ while [[ true ]]; do
   if [ $code = "9999" ]
   then
     bash update_content.sh
-  else
-    echo "printing "$code
-    lpr -P CUSTOM-Engineering-VKP80III -o media=ZX80MMYRoll $cache$code.pdf
+    code="all"
   fi
 
+  echo "printing "$code
+  lpr -P CUSTOM-Engineering-VKP80III -o media=ZX80MMYRoll $cache$code.pdf
 
 done
