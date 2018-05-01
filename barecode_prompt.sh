@@ -1,4 +1,3 @@
-
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cache=$DIR"/cache/pdf/"
 printer="CUSTOM_Engineering_VKP80III"
@@ -13,7 +12,14 @@ while [[ true ]]; do
     code="all"
   fi
 
-  echo "printing "$code
+  if [ -f "$cache$code.pdf" ]
+  then
+  	echo "printing "$code
+  else
+  	echo "error"
+    code="8888"
+  fi
+
   lpr -P $printer -o media=ZX80MMYRoll $cache$code.pdf
 
 done
