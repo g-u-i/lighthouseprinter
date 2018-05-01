@@ -11,9 +11,10 @@ page.open(system.args[1], function() {
 
   var max = 120;
   var size = Math.round(height/18);
-  var sizeCm = Math.min(size,max)+"cm";
 
-  console.log(max, size, sizeCm);
+  sheets = Math.ceil(size/max);
+  sizeCm = size/sheets+"cm";
+  console.log('max:',max, "size:", size, "sizeCm:",sizeCm, "sheets:", sheets);
 
   page.paperSize = { width: '8cm', height:sizeCm, margin: '0.4cm' }
   page.render(system.args[2]+'.pdf');
