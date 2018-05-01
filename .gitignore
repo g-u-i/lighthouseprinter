@@ -4,3 +4,4 @@ node_modules
 .AppleDouble/
 renders
 cache/
+dropbox.sh
