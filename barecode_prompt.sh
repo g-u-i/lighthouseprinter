@@ -9,7 +9,6 @@ while [[ true ]]; do
   if [ $code = "9999" ]
   then
     bash update_content.sh
-    code="all"
   fi
 
   if [ -f "$cache$code.pdf" ]
