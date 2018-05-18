@@ -16,7 +16,7 @@ while [[ true ]]; do
   	echo "printing "$code
   else
   	echo "error"
-    code="8888"
+    code="null"
   fi
 
   lpr -P $printer -#3 -o media=ZX80MMYRoll $cache$code.pdf
