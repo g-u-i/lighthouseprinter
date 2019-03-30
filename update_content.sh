@@ -1,9 +1,15 @@
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cache=$DIR"/cache/pdf/"
 
-source dropbox.sh 
+pwd
 
-curl -L $dropbox  >  pdf.zip
+source $DIR"/dropbox.sh"
+mkdir -p $cache
+
+echo $dropbox
+
+wget -O pdf.zip $dropbox
+
 rm -rf $cache
 unzip pdf.zip -d $cache
 rm pdf.zip
