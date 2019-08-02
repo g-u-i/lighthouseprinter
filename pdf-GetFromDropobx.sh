@@ -1,7 +1,8 @@
+
 DIR="$(cd "$(dirname "$0")" && pwd)"
 cache=$DIR"/cache/pdf/"
 
-source getPdf-FromDropobx-config.sh
+source pdf-getFromDropobx_config.sh
 
 curl -L $dropbox  >  pdf.zip
 rm -rf $cache
