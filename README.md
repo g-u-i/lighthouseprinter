@@ -31,7 +31,5 @@ install nmap
 - check/empty printer tasks
 - change default settings (black level, speed…)
 
-find raspberryPi ip address on local network (ex. 192.168.1.1)
-
-1. find got to `http://192.168.1.1:631`
+1. find got to `http://192.168.??.??:631`
 2. when asked connect with raspberryPi login and password
