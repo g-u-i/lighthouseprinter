@@ -16,7 +16,7 @@ oscServer.on('message', function (msg) {
   var pdf = cache+dreamId+'.pdf':
 
   // defaut page
-  if (!fs.existsSync(pdf)) var pdf = cache+'null.pdf':
+  if (!fs.existsSync(pdf)) var pdf = cache+'null.pdf';
 
   var printOrder = 'lpr -P '+printer+' -#1 -o media=ZX80MMYRoll '+pdf;
 
