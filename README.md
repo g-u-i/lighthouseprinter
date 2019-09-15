@@ -9,14 +9,22 @@
 
 ## OSC printing from milumin
 
+### find raspberryPi raspberryPi IP address on local network
+
+using nmap (mind ip patern 192.168.1 or 192.168.0)
+
+`sudo nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'`
+
+install nmap 
+
+`brew install nmap`
+
 ### setup millumin
 
-find raspberryPi ip address on local network (ex. 192.168.1.1)
-
 1. create new OSC Server
-2. `to machine` contain raspberryPi ip address
-3. `to port` contain `3333`
-4. OSC address is `/printdream` and parameter is an `int` representing the `dreamId`
+2. set raspberryPi ip address as `to machine` 
+3. set `3333` as `to port` 
+4. OSC message should be sent to `/printdream` with `dreamId` (integer) as parameter.
 
 ### printer monitoring
 
