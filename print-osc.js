@@ -11,17 +11,15 @@ oscServer.on('message', function (msg) {
   var currentPath = process.cwd();
 
   var dreamId = msg[2][1];
-  var cache   = currentPath+"/cache/pdf/"
-  var printer = "CUSTOM_Engineering_VKP80III"
-  var pdf = cache+dreamId+'.pdf':
+  var cache   = currentPath+"/cache/pdf/";
+  var printer = "CUSTOM_Engineering_VKP80III";
+  var pdf = cache+dreamId+'.pdf';
 
   // defaut page
   if (!fs.existsSync(pdf)) var pdf = cache+'null.pdf';
 
   var printOrder = 'lpr -P '+printer+' -#1 -o media=ZX80MMYRoll '+pdf;
-
   console.log("SENDING", dreamId, printer, printOrder);
-
 
   exec(printOrder, (err, stdout, stderr) => {
     if (err) {
