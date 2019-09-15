@@ -19,6 +19,6 @@ while [[ true ]]; do
     code="null"
   fi
 
-  lpr -P $printer -#3 -o media=ZX80MMYRoll $cache$code.pdf
+  lpr -P $printer -#1 -o media=ZX80MMYRoll $cache$code.pdf
 
 done
