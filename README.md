@@ -9,7 +9,7 @@
 
 ## OSC printing from milumin
 
-### setup milumin
+### setup millumin
 
 find raspberryPi ip address on local network (ex. 192.168.1.1)
 
@@ -26,4 +26,4 @@ find raspberryPi ip address on local network (ex. 192.168.1.1)
 find raspberryPi ip address on local network (ex. 192.168.1.1)
 
 1. find got to `http://192.168.1.1:631`
-2. when ask connect with raspberryPi login and password
+2. when asked connect with raspberryPi login and password
