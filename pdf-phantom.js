@@ -12,14 +12,15 @@ page.open(system.args[1], function() {
   var max = 120;
   var size = Math.round(height/18);
 
+  // get sheet size
   sheets = Math.ceil(size/max);
   sizeCm = size/sheets+"cm";
   console.log('max:',max, "size:", size, "sizeCm:",sizeCm, "sheets:", sheets);
-  
-  sizeCm = 120+"cm";
+
+  sizeCm = 120+"cm"; // force sheet size (printer suports 120)
 
   page.paperSize = { width: '8cm', height:sizeCm, margin: '0.4cm' }
-  page.render(system.args[2]+'.pdf'); 
+  page.render(system.args[2]+'.pdf');
   phantom.exit();
 
 });

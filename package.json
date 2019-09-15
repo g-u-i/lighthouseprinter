@@ -1,11 +1,11 @@
 {
   "dependencies": {
     "casperjs": "^1.1.4",
+    "node-osc": "^4.1.0",
     "phantomjs": "^2.1.7"
   },
   "name": "lighthouseprinter",
   "version": "1.0.0",
-  "main": "casper-test.js",
   "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
