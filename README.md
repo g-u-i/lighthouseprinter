@@ -13,16 +13,13 @@
 
 using nmap (mind ip patern 192.168.1 or 192.168.0)
 
-`sudo nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'`
-
-install nmap 
-
-`brew install nmap`
+1. install nmap `brew install nmap`
+2. `sudo nmap -sP 192.168.1.0/24 | awk '/^Nmap/{ip=$NF}/B8:27:EB/{print ip}'`
 
 ### setup millumin
 
 1. create new OSC Server
-2. set raspberryPi ip address as `to machine` 
+2. set `raspberryPi ip address` as `to machine` 
 3. set `3333` as `to port` 
 4. OSC message should be sent to `/printdream` with `dreamId` (integer) as parameter.
 
