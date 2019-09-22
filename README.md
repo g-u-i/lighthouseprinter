@@ -30,3 +30,9 @@ using nmap (mind ip patern 192.168.1 or 192.168.0)
 
 1. find got to `http://192.168.??.??:631`
 2. when asked connect with raspberryPi login and password
+
+### osc script monitoring
+
+1. connect to raspberryPi thought ssh `ssh pi@192.168.??.??`
+2. start pm2 monitor `pm2 monit`
+
