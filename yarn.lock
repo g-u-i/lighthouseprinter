@@ -245,6 +245,11 @@ generate-object-property@^1.1.0:
   dependencies:
     is-property "^1.0.0"
 
+get-port@^5.1.1:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/get-port/-/get-port-5.1.1.tgz#0469ed07563479de6efb986baf053dcd7d4e3193"
+  integrity sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==
+
 getpass@^0.1.1:
   version "0.1.7"
   resolved "https://registry.yarnpkg.com/getpass/-/getpass-0.1.7.tgz#5eff8e3e684d569ae4cb2b1282604e8ba62149fa"
@@ -432,9 +437,9 @@ klaw@^1.0.0:
     graceful-fs "^4.1.9"
 
 lodash@^4.17.14:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.21"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
+  integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
 
 mime-db@1.40.0:
   version "1.40.0"
@@ -467,11 +472,12 @@ mkdirp@0.5.0:
   dependencies:
     minimist "0.0.8"
 
-node-osc@^4.1.0:
-  version "4.1.0"
-  resolved "https://registry.yarnpkg.com/node-osc/-/node-osc-4.1.0.tgz#ac5a6b9676e8a0f1f679cd8f2a5aac91d3e8a028"
-  integrity sha512-VXMbmLMFxLt2rbUWxCLcq5nEcSXf6Zxyepzh6Vh6zDeIO/xBNqH5X1R6DuoITi4WOs1ae6VKu3ZwQJDN5D+Cdg==
+node-osc@^4.1.1:
+  version "4.1.9"
+  resolved "https://registry.yarnpkg.com/node-osc/-/node-osc-4.1.9.tgz#b22302f66ae181472322d14627d5d0becf0a84fc"
+  integrity sha512-1avottZqi+6f6dr0x68EpyHSpToDi9SlCkIW1mx+ThLYS32IOvxA96QWdW8MetS3nfKIyyHKO/oaD5T2PhCfnA==
   dependencies:
+    get-port "^5.1.1"
     jspack "0.0.4"
     osc-min "^1.1.1"
 
